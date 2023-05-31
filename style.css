@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    background-color:hsl(210, 46%, 95%);    
+    margin: 10px;    
+    margin-top: 20px;
+}
+
+#card-1{
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+#card-2{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+#card-3{
+    background-color: hsl(0, 0%, 100%);
+}
+#card-4{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+#card-5{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.grid{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+.sub-section .grid {
+    margin-right: 20px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+h4, p{
+    margin: 0;
+}
+
+.contents h4, .contents p {
+    margin-top: 20px;
+}
+
+.header-img{
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.contents p {
+    
+    opacity: 0.7;
+}
+
+.header-text p {
+    opacity: 0.5;
+}
+
+#quote{
+    position: absolute;
+    right: 15%;
+    top: 20px;
+    z-index: 1;
+    
+}
+
+.header, .contents {
+    position: relative;
+    z-index: 2;
+}
+@media (min-width: 576px) {
+
+    body, .main-section, .section1, .section2 {
+        display: flex;
+    }
+
+    body{
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    .main-section{
+        flex-direction: row;
+        max-width: 900px;        
+    }
+
+    .sub-section{
+        flex-basis: 75%;
+    }
+
+
+    #card-1{
+        flex-basis: 65%;
+    }
+
+    #card-2{
+        flex-basis: 35%;
+    }    
+
+    #card-3{
+        flex-basis: 35%;
+    }
+
+    #card-4{
+        flex-basis: 65%;
+    }
+
+    #card-5{
+        flex-basis: 25%;
+    }
+
+    #quote{
+        right: 55%;
+    }
+}
